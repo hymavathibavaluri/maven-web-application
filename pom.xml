@@ -98,14 +98,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.233.158.86:9980/mithuntechnologies/repository/facebook-release/</url>
+	      <name>maven-central-repository</name>
+	      <url>http://65.0.170.172:8081/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.233.158.86:9980/mithuntechnologies/repository/facebook-snapshot/</url>
+	      <url>http://65.0.170.172:8081/#browse/browse:maven-central-repository:dffs%2Ffef%2Ffsf</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
