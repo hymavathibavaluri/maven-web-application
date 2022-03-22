@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<artifactId>maven-web-flipcourt</artifactId>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>war</packaging>
 	
-	<name>maven-web-application</name>
+	<name>maven-web-flipcourt</name>
 
 	<description>Maven Web Project for Java Programming Language</description>
 
@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://3.108.254.61:9000/</sonar.host.url>
+		<sonar.host.url>http://65.1.111.224:9000/</sonar.host.url>
                 <sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
              
@@ -98,14 +98,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>maven-central-repository</name>
-	      <url>http://65.0.170.172:8081/repository/maven-central-repository/</url>
+	      <name>flipcourt-dev</name>
+	      <url>http://65.2.122.101:8081/repository/flipcourt-dev/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://65.0.170.172:8081/repository/maven-central-repository/</url>
+	      <name>Mydukur technologies</name>
+	      <url>http://65.2.122.101:8081/repository/flipcourt-dev/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
