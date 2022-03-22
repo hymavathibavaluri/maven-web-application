@@ -1,6 +1,6 @@
 node
 {
- def mavenHome = tool name: "maven3.6.3"
+ def mavenHome = tool name: "maven3.8.5"
  
  //echo "GitHub BranhName ${env.BRANCH_NAME}"
   //echo "Jenkins Job Number is: -->  ${env.BUILD_NUMBER}"
@@ -21,7 +21,7 @@ node
  {
  sh "${mavenHome}/bin/mvn clean package"
  }
- /*
+ 
  stage('ExecuteSonarQubeReport')
  {
  sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -32,7 +32,7 @@ node
  sh "${mavenHome}/bin/mvn deploy"
  }
  
- stage('DeployAppIntoTomcatServer')
+ /*stage('DeployAppIntoTomcatServer')
  {
   sshagent(['80459334-5776-471c-90c6-277f3fbdd727']) {
   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.25.69.97:/opt/apache-tomcat-9.0.44/webapps/"
@@ -44,8 +44,7 @@ node
  emailext body: '''Build Over - Scriptedway
 
  Regards,
- Mithun Software Solutions,
- 9980923226''', subject: 'Build Over - Scriptedway', to: 'devopstrainingblr@gmail.com'
+ Devops Team''', subject: 'Build Over - Scriptedway', to: 'rajueeeatp@gmail.com'
  }
  
 }
