@@ -1,0 +1,27 @@
+@Library('devopslibs') _
+
+pipeline{
+    agent{
+        label "cloudnodes"
+    }
+    tools{
+        maven "maven3.8.2"
+    }
+    stages{
+        stage('Codecheckout'){
+            steps{
+                git branch: 'development', credentialsId: 'github', url: 'https://github.com/chiranjeevirajud/maven-web-application.git'
+            }
+        }
+        stage('Build'){
+            steps{
+                stages("Build")
+            }
+        }
+        stage('SQ Report'){
+            steps{
+                stages("SQ Report")
+            }
+        }
+    }
+}
