@@ -18,6 +18,7 @@ node('wallmart-node')
  stage('ExecuteSonarQubeReport')
  {
  sh "${mavenHome}/bin/mvn sonar:sonar"
+ //hvhgfgfcftxfxfxfxfxfx
  }
  
  stage('UploadArtifactsintoNexus')
